@@ -14,16 +14,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/relLayout1">
-
             <include layout ="@layout/layout_top_tabs"/>
-
-
 
         </RelativeLayout>
         <!-- Middle section(body) -->
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/relLayout2"
             android:layout_below="@+id/relLayout1">
 
@@ -32,6 +29,7 @@
         </RelativeLayout>
 
         <!-- bottom navigation -->
+        <include layout ="@layout/layout_bottom_navigation_view"/>
 
     </RelativeLayout>
 
