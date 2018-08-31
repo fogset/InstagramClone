@@ -1,5 +1,6 @@
 package com.example.tianhao.instagramclone;
 
+import android.content.Context;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 public class HomeActivity extends AppCompatActivity {
 
     private  static  final String TAG="HomeActivity";
+    private Context mContext = HomeActivity.this;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,5 +29,6 @@ public class HomeActivity extends AppCompatActivity {
         Log.d(TAG,"setupBottomNavigationView:setting up BottomNavigationView");
         BottomNavigationViewEx bottomNavigationViewEx = findViewById(R.id.bottomNavViewBar);
         BottomNavigationViewHelper.setupBottomNavigationView(bottomNavigationViewEx);
+        BottomNavigationViewHelper.enableNavigation(mContext,bottomNavigationViewEx);
     }
 }
