@@ -1,21 +1,20 @@
-package com.example.tianhao.instagramclone;
+package com.example.tianhao.instagramclone.Profile;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.tianhao.instagramclone.R;
 import com.example.tianhao.instagramclone.Utils.BottomNavigationViewHelper;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
-public class SearchActivity extends AppCompatActivity{
-    private static final String TAG = "SearchActivity";
-    private  static final int ACTIVITY_NUM = 1;
-    private Context mContext = SearchActivity.this;
+public class ProfileActivity extends AppCompatActivity{
+    private static final String TAG = "ProfileActivity";
+    private  static final int ACTIVITY_NUM = 3;
+    private Context mContext = ProfileActivity.this;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +23,6 @@ public class SearchActivity extends AppCompatActivity{
 
         setupBottomNavigationView();
     }
-
     /**
      * BottomNavigationView setup
      */

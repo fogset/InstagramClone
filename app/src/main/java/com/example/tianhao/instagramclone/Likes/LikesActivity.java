@@ -1,14 +1,13 @@
-package com.example.tianhao.instagramclone;
+package com.example.tianhao.instagramclone.Likes;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.tianhao.instagramclone.R;
 import com.example.tianhao.instagramclone.Utils.BottomNavigationViewHelper;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
