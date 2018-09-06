@@ -34,8 +34,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="C:\Users\Tianhao\Desktop\New folder\instagram-logo-png-transparent-png-12.png" />
-                                      <entry key="outputName" value="ic_instagramImage" />
+                                      <entry key="imageAsset" value="C:\Users\Tianhao\Desktop\New folder\instagram-logo.png" />
+                                      <entry key="outputName" value="ic_instagram_image" />
                                       <entry key="theme" value="CUSTOM" />
                                       <entry key="themeColor" value="000000" />
                                     </map>

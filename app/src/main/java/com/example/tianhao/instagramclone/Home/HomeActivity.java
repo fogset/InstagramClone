@@ -1,6 +1,7 @@
 package com.example.tianhao.instagramclone.Home;
 
 import android.content.Context;
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -35,6 +36,10 @@ public class HomeActivity extends AppCompatActivity {
         adapter.addFragment(new MessagesFragment());
         ViewPager viewPager =(ViewPager) findViewById(R.id.container);
         viewPager.setAdapter(adapter);
+
+        TabLayout tabLayout =(TabLayout)findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(viewPager);
+
     }
 
     /**
