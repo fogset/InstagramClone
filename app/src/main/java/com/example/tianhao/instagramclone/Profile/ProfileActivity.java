@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toolbar;
 
 import com.example.tianhao.instagramclone.R;
 import com.example.tianhao.instagramclone.Utils.BottomNavigationViewHelper;
@@ -23,6 +24,26 @@ public class ProfileActivity extends AppCompatActivity{
 
         setupBottomNavigationView();
     }
+    private  void setupToolbar(){
+        Toolbar toolbar = findViewById(R.id.profileToolBar);
+        setSupportActionBar(toolbar);
+        //setSupportActionBar(toolbar);
+
+        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                Log.d(TAG, "onMenuItemClick: clicked menu item: " + item);
+
+                switch (item.getItemId()){
+                    R.id.profileMenu:
+                    Log.d(TAG,"onMenuItemClick:");
+                }
+                return false;
+            }
+        });
+    }
+
+
     /**
      * BottomNavigationView setup
      */
