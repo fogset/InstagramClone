@@ -23,6 +23,7 @@ public class ProfileActivity extends AppCompatActivity{
         Log.d(TAG,"onCreate:starting.");
 
         setupBottomNavigationView();
+        setupToolbar();
     }
     private  void setupToolbar(){
         Toolbar toolbar = findViewById(R.id.profileToolBar);
@@ -35,8 +36,8 @@ public class ProfileActivity extends AppCompatActivity{
                 Log.d(TAG, "onMenuItemClick: clicked menu item: " + item);
 
                 switch (item.getItemId()){
-                    R.id.profileMenu:
-                    Log.d(TAG,"onMenuItemClick:");
+                    case R.id.profileMenu:
+                    Log.d(TAG,"onMenuItemClick: Navigating to Profile Preferences.");
                 }
                 return false;
             }
@@ -55,5 +56,11 @@ public class ProfileActivity extends AppCompatActivity{
         Menu menu = bottomNavigationViewEx.getMenu();
         MenuItem menuItem = menu.getItem(ACTIVITY_NUM);
         menuItem.setChecked(true);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.profile_menu, menu);
+        return true;
     }
 }
