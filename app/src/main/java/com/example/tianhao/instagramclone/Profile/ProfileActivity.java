@@ -6,7 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toolbar;
+//import android.widget.Toolbar;
+import android.support.v7.widget.Toolbar;
 
 import com.example.tianhao.instagramclone.R;
 import com.example.tianhao.instagramclone.Utils.BottomNavigationViewHelper;
@@ -14,20 +15,20 @@ import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 public class ProfileActivity extends AppCompatActivity{
     private static final String TAG = "ProfileActivity";
-    private  static final int ACTIVITY_NUM = 3;
+    private  static final int ACTIVITY_NUM = 4;
     private Context mContext = ProfileActivity.this;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_profile);
         Log.d(TAG,"onCreate:starting.");
 
-        setupBottomNavigationView();
+        //setupBottomNavigationView();
         setupToolbar();
     }
     private  void setupToolbar(){
         Toolbar toolbar = findViewById(R.id.profileToolBar);
-        setSupportActionBar(toolbar);
+        //setSupportActionBar(toolbar);
         //setSupportActionBar(toolbar);
 
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
