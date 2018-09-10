@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 //import android.widget.Toolbar;
 import android.support.v7.widget.Toolbar;
@@ -46,6 +47,7 @@ public class ProfileActivity extends AppCompatActivity{
     }
 
 
+
     /**
      * BottomNavigationView setup
      */
@@ -59,9 +61,25 @@ public class ProfileActivity extends AppCompatActivity{
         menuItem.setChecked(true);
     }
 
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.profile_menu, menu);
+//        return true;
+//    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.profile_menu, menu);
-        return true;
+
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.profile_menu,menu);
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId()==R.id.profileMenu){
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
