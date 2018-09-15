@@ -29,8 +29,8 @@ public class ProfileActivity extends AppCompatActivity{
     }
     private  void setupToolbar(){
         Toolbar toolbar = findViewById(R.id.profileToolBar);
-        //setSupportActionBar(toolbar);
-        //setSupportActionBar(toolbar);
+        setSupportActionBar(toolbar);
+
 
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
@@ -45,8 +45,6 @@ public class ProfileActivity extends AppCompatActivity{
             }
         });
     }
-
-
 
     /**
      * BottomNavigationView setup
