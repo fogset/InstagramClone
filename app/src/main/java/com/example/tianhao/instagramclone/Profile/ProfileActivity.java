@@ -24,7 +24,7 @@ public class ProfileActivity extends AppCompatActivity{
         setContentView(R.layout.activity_profile);
         Log.d(TAG,"onCreate:starting.");
 
-        //setupBottomNavigationView();
+        setupBottomNavigationView();
         setupToolbar();
     }
     private  void setupToolbar(){
@@ -73,11 +73,11 @@ public class ProfileActivity extends AppCompatActivity{
         return super.onCreateOptionsMenu(menu);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId()==R.id.profileMenu){
-
-        }
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        if(item.getItemId()==R.id.profileMenu){
+//
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
 }
